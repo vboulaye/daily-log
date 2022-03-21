@@ -2,6 +2,8 @@
 #
 # Initialize a new daily activity log.
 #
+BASEDIR=$(dirname "$0")
+echo "$BASEDIR"
 
 # works for Darwin and GNU version of date
 YEAR=`date "+%Y"`
@@ -34,6 +36,7 @@ else
   vim ${LOG_FILE}
 fi
 
+git add .
 git commit -am "saved changes for ${TODAY} ($DOW)" 
 git push
 # EOF
