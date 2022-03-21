@@ -33,6 +33,8 @@ if [ "$(uname)" == "Darwin" ] ; then
 else
   vim ${LOG_FILE}
 fi
- 
+
+git commit -am "saved changes for ${TODAY} ($DOW)" 
+git push
 # EOF
 
