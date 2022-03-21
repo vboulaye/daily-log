@@ -4,6 +4,7 @@
 #
 BASEDIR=$(dirname "$0")
 echo "$BASEDIR"
+cd $BASEDIR
 
 # works for Darwin and GNU version of date
 YEAR=`date "+%Y"`
